@@ -19,6 +19,20 @@ var colorGuess4Var = document.querySelector("#colorGuess4");
 var colorGuess5Var = document.querySelector("#colorGuess5");
 var colorGuess6Var = document.querySelector("#colorGuess6");
 
+var colorRectangles = [colorGuess1Var,colorGuess2Var,colorGuess3Var,colorGuess4Var,colorGuess5Var,colorGuess6Var];
+
+var displayClick = (i, p) => {
+    debugger
+    console.log(`Guess ${i} -- has been clicked. Sample ${this + 1} ` + guessTotalNo);
+
+}
+
+// Event listeners for the 6 color answers"
+for (var i=0; i < colorRectangles.length ; i++) {
+    var p = 4+1;
+    colorRectangles[i].addEventListener("click" , displayClick.bind(4, i, p))
+}
+
 // Initialize other variables including total number of guesses (6 - hard, 3 - Easy)
 colorGuess1Var.style.background = "pink";
 var guessTotalNo = 6;
@@ -48,25 +62,9 @@ hardVar.addEventListener("click",function() {
 console.log("Hard -- has been clicked");
 }) 
 
-// Event listeners for the 6 color answers"
-colorGuess1Var.addEventListener("click",function() {
-console.log("guess 1 -- has been clicked " + guessTotalNo);
-}) 
-colorGuess2Var.addEventListener("click",function() {
-console.log("guess 2 -- has been clicked " + guessTotalNo);
-}) 
-colorGuess3Var.addEventListener("click",function() {
-console.log("guess 3 -- has been clicked " + guessTotalNo);
-}) 
-colorGuess4Var.addEventListener("click",function() {
-console.log("guess 4 -- has been clicked " + guessTotalNo);
-}) 
-colorGuess5Var.addEventListener("click",function() {
-console.log("guess 5 -- has been clicked " + guessTotalNo);
-}) 
-colorGuess6Var.addEventListener("click",function() {
-console.log("guess 6 -- has been clicked " + guessTotalNo);
-}) 
+
+
+
 
 var chooseColorGuesses = function() { console.log('chooseColorGuesses'); }
 
