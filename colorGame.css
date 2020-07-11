@@ -1,0 +1,63 @@
+/* h1{
+color:red
+} */
+.jumbotron {
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+    height: 180px;
+    padding-top: 1em;
+    font-family: "Montjerrat", "Avenir";
+    margin:0 0 0 0;
+}
+
+#colorred {
+    color: pink; 
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+body {
+    background-color: #232323;
+}
+
+#displayLine {
+    background-color: white; 
+    color: steelblue;
+    font-weight: 600;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#hard {
+    margin-left: 10px;
+}
+
+#tryAgain {
+    color: black; 
+    text-align: center;
+    font-weight: 400;
+    font-size: small; 
+}
+.colorGuessAll {
+    height: 180px;
+    width: 180px;
+    background-color: powderblue;
+    border-radius: 15%;
+    float: left;
+    margin: 10px;
+}
+
+#displayContainer {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px; 
+}
+        
